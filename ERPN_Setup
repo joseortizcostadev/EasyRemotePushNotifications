@@ -1,0 +1,87 @@
+//  Copyright      © 2016 ERPN. All rights reserved.
+//  Description:   This app is used as a guide about how to configure your
+//               delegate file with ERPN.swift API in order to send 
+//               remote push notifications from your erpn server with IOS
+//               devices. After building your own IOS project, and 
+//               in order to send push notifications from your project 
+//               using the ERPN, you must go to jortizsd.com/easy_remote_services/index.php
+//               and create a new account. Then you must register your project,
+//               follow the instructions detailed there, and set your delegate up 
+//               like in this example.
+//                 Note that your delegate file may look diferent from this one. However, you
+//               should be able to set it up without any problem.
+//
+//
+//*************************************************************************************************
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+    /** 
+       Creates an object of the ERPN configuration class.
+       Your erpn_username and password are the credentials you used to register in jortizsd.com/easy_remote_services/index.php
+       The project bundle is this project bundle. Note that you can also get your project bundle
+       by code.
+    */
+    let erpn = ERPN(erpnUsername: "your_erpn_username", erpnPassword: "your_erpn_password", erpnBundle: "your_project_bundle")
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        // Register this project to send and recieve remote push notifications
+        // You must set the minimum version target according to your project target
+        erpn.registerProjectToSendRemoteNotifications(delegateAplication: application, minimumVersionTarget: 9.0)
+        
+        // This device token will be sent to the server every time this app is launched
+        // for the first time.
+        erpn.setSendTokenAtFirstLaunch(sendTokenAtFistAppRun: true)
+        
+        // This line of code is optional but very useful during development.
+        // If true, it will send you an email containing detailed information
+        // about the configuration status of your project. 
+        // Once your project is sent to production, comment or remove or set to false
+        // this line of code.
+        erpn.setTestMode(testModeStatus: true)
+        
+        
+        return true
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        
+    }
+
+    func applicationDidEnterBackground(application: UIApplication) {
+        
+    }
+
+    func applicationWillEnterForeground(application: UIApplication) {
+        
+    }
+
+    func applicationDidBecomeActive(application: UIApplication) {
+        
+    }
+
+    func applicationWillTerminate(application: UIApplication) {
+       
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
+    {
+        // Sends your device token to erpn server and prints the device token in 
+        // the console of this application
+        erpn.sendDeviceToken(deviceToken)
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError)
+    {
+        // Checks for errors while sending your device token
+        erpn.getRegisterNotificationsError(cathError: error)
+    }
+
+
+}
+
