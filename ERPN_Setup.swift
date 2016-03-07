@@ -28,7 +28,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let erpn = ERPN(erpnUsername: "newest", erpnPassword: "newtest", erpnBundle: "erpn.newtest")
+    let erpn = ERPN(erpnUsername: "username", erpnPassword: "password", erpnBundle: "your.project.bundle")
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		
 	// Register this project to receive remote push notifications 
