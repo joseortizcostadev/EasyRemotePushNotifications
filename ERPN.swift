@@ -29,11 +29,12 @@ class ERPN
     /***** 
 	     
           DO NOT MODIFY ERPN_SERVER UNDER ANY CONCEPT
-		  MODIFICATIONS OF THIS CLASS COULD PROVOKE FATAL 
-		  ERRORS IN YOUR CODE, AS WELL AS, FAILURE TO PUSH AND
-		  RECEIVE REMOTE NOTIFICATIONS
+          MODIFICATIONS OF THIS CLASS COULD PROVOKE FATAL 
+	  ERRORS IN YOUR CODE, AS WELL AS, FAILURE TO PUSH AND
+	  RECEIVE REMOTE NOTIFICATIONS
 	
-	******/
+    ******/
+    
     private let ERPN_SERVER: NSURL! = NSURL (string: "http://jortizsd.com/easy_remote_services/easy_remote_push_notifications/tokens_manager.php")
     private let ERPN_DEVICE_TOKEN_STATUS: NSURL! = NSURL (string: "http://jortizsd.com/easy_remote_services/easy_remote_push_notifications/ntf_feedback.php")
     // Modify the value of KEY_FIRST_APP_RUN key if it creates conflicts with any other key set in this project
