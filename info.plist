@@ -5,7 +5,7 @@
    
    Description:  This plist file provides an example about how to
                  add transport security to a ERPN project.
-				 Important lines of code are from 46 to 60.
+		 Note: Important lines of code start from line 46 to 60.
 -->
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
