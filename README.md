@@ -5,6 +5,6 @@
 * Then, you'll need to create your apple certificates and provisionament files for development, production or both. 
 * Once you have all of this stuff figured out, you must go to jortizsd.com/easy_remote_services/index.php and create a new developer account. 
 * Once your account has been created, you need to register your project in your erpn account, and configure it in the configuration panel
-* In the configuration panel, you'll configure your project using three easy steps. First, you'll upload your development or production certificate to our server. Then, you'll be able to download our ERPN API. 
+* In the configuration panel, you'll configure your project using three easy steps. First, you'll upload your development or production certificate to our server. Then, you'll be able to download our ERPN API. Also, you can find our API in this repository. Finally, you'll have to configure the transport security in your project. 
 
 
