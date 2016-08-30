@@ -18,9 +18,10 @@
 //                   Any internal modification of this API could cause fatal errors in your code, and
 //                   therefore, failures to push ans receive remote notifications. To learn more
 //                   about our ERPN policies, please visit jortizsd.com/easy_remote_services.
+//  
+//  Important:       Due to the recent release of Swift 3 and IOS 10. Some code from this API is being updated and tested. 
+//                   The final version compatible with Swift 3 for IOS 8 and above will be commited soon. 
 //
-//
-
 import Foundation
 import UIKit
 
