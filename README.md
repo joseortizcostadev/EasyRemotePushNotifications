@@ -10,22 +10,22 @@
      1. First, you'll upload your development or production certificate to our server. <br> 
      2. Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. <br>
      3. Finally, you'll have to configure the transport security in your info.plist file of your project. <br>
-     ``` xml
+     ```xml 
          <key>NSAppTransportSecurity</key>
-	      <dict>
-		    <key>NSExceptionDomains</key>
-		       <dict>
-			     <key>jortizsd.com</key>
-			        <dict>
-				      <key>NSIncludesSubdomains</key>
-				      <true/>
-				      <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				      <true/>
-				      <key>NSTemporaryExceptionMinimumTLSVersion</key>
-				      <string>TLSv1.1</string>
-			        </dict>
-		       </dict>
-	       </dict>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>jortizsd.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+		</dict>
+	</dict>
      ```
      
 
