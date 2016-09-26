@@ -7,11 +7,11 @@
 • Once you have all of this stuff figured out, you must go to jortizsd.com/easy_remote_services/index.php and create a new developer account. <br>
 • After your account has been created, you need to register your project in your erpn account, and configure it in the configuration panel <br>
 • In the configuration panel, you'll configure your project using three easy steps. <br>
-. 1.First, you'll upload your development or production certificate to our server. <br> 
-. Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. <br>
-. Finally, you'll have to configure the transport security in your info.plist file of your project. <br>
+• 1.First, you'll upload your development or production certificate to our server. <br> 
+• Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. <br>
+• Finally, you'll have to configure the transport security in your info.plist file of your project. <br>
      
-     ```
+     ```xml
         <key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
