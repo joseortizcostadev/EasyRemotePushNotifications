@@ -4,7 +4,7 @@
 <h1> Instalation </h1>
 • First of all, you need to create your own project in xCode for IOS devices using Swift. It can be an empty project just to test our services. <br>
 • Then, you'll need to create your apple certificates and provisionament files for development, production or both. <br>
-• Once you have all of this stuff figured out, you must go to jortizsd.com/easy_remote_services/ and create a new developer account. <br>
+• Once you have all of this stuff figured out, you must go to <i href = "jortizsd.com/easy_remote_services/"> Easy Remote Push Notifications </i> and create a new developer account. <br>
 • After your account has been created, you need to register your project in your erpn account, and configure it in the configuration panel <br>
 • In the configuration panel, you'll configure your project using three easy steps:  <br>
 • First, you'll upload your development or production certificate to our server. <br> 
