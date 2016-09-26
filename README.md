@@ -11,8 +11,8 @@
 • Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. <br>
 • Finally, you'll have to configure the transport security in your info.plist file of your project. <br>
      
-     ```xml
-        <key>NSAppTransportSecurity</key>
+     ``` xml
+     <key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
