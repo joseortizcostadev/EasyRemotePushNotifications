@@ -8,9 +8,29 @@
 • After your account has been created, you need to register your project in your erpn account, and configure it in the configuration panel <br>
 • In the configuration panel, you'll configure your project using three easy steps. <br>
      1. First, you'll upload your development or production certificate to our server. <br> 
-     2. Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. 
-     3. Finally, you'll have to configure the transport security in your info.plist file of your project.
-• If you have followed all this steps correctely, Then, you are ready to push remote notifications from your IOS devices to your customers using your ERPN server admin panel. 
-* We are actually working on providing Android remote notifications support to our ERPN customers. Please, visit jortizsd.com/easy_remote_services/ to learn more about our work.
+     2. Then, you'll be able to download our ERPN API or download it from this repo. You can find an example about how to use         our ERPN API in the ERPN_Setup.swift file located in this repo. <br>
+     3. Finally, you'll have to configure the transport security in your info.plist file of your project. <br>
+     ``` xml
+         <key>NSAppTransportSecurity</key>
+	      <dict>
+		    <key>NSExceptionDomains</key>
+		       <dict>
+			     <key>jortizsd.com</key>
+			        <dict>
+				      <key>NSIncludesSubdomains</key>
+				      <true/>
+				      <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				      <true/>
+				      <key>NSTemporaryExceptionMinimumTLSVersion</key>
+				      <string>TLSv1.1</string>
+			        </dict>
+		       </dict>
+	       </dict>
+     ```
+     
+
+<h1> Usage </h1> 
+• If you have followed all this steps correctely, Then, you are ready to push remote notifications from your IOS devices to your customers using your ERPN server admin panel. <br>
+• We are actually working on providing Android remote notifications support to our ERPN costumers. Please, visit jortizsd.com/easy_remote_services/ to learn more about our work.
 
 
