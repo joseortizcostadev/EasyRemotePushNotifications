@@ -1,4 +1,4 @@
-# EasyRemotePushNotifications
+# Easy Remote Push Notifications
 <h1> Description </h1>
 • A complete, free and easy service to send and schedule remote push notifications to IOS devices from your app. You will be all the time in complete control about how and when to send your IOS notifications. 
 <h1> Instalation </h1>
