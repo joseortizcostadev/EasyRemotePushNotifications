@@ -35,6 +35,6 @@
 • We are actually working on providing Android remote notifications support to our ERPN costumers. Please, visit jortizsd.com/easy_remote_services/ to learn more about our work.
 
 <h1> Updates </h1>
-• Easy Remote Push Notifications Framework has been updated to support for new Swift 3.0 syntax and devices with IOS 10 installed. 
+• Easy Remote Push Notifications Framework has been updated to provide support for new Swift 3.0 syntax and devices with IOS 10 installed. 
 
 
