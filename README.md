@@ -78,8 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError){
             // Returns an error notifications if the conection to your ERPN server failed, or this device token was
-	    // not sent correctely.
-	    // Note: Errors will be displayed in the console log of your project.
+	        // not sent correctely.
+	        // Note: Errors will be displayed in the console log of your project.
             erpn.getRegisterNotificationsError(cathError: error)
     }
 }
