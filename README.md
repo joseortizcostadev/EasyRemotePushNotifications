@@ -56,25 +56,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?)->Bool{ 
 	    // Register this project to receive remote push notifications 
-        erpn.registerProjectToSendRemoteNotifications(delegateAplication: application, minimumVersionTarget: 8.0)
+            erpn.registerProjectToSendRemoteNotifications(delegateAplication: application, minimumVersionTarget: 8.0)
 		
 	    // If true, the device token of the device using this app will be sent to your
 	    // ERPN server every time this app is launched for the first time.
 	    // Note: repeated tokens won't be saved in your ERPN server to avoid future device tokens conflicts.
-        erpn.setSendTokenAtFirstLaunch(sendTokenAtFistAppRun: true)
+            erpn.setSendTokenAtFirstLaunch(sendTokenAtFistAppRun: true)
         
 	    // If true, every time an user install your app in his/her IOS device, you'll 
 	    // receive an email confirmation with useful information about the token status for
 	    // in your ERPN server for that new device.
-	erpn.willSendEmailAfterNewDeviceTokenIsAdded(sendEmail: true)
+	    erpn.willSendEmailAfterNewDeviceTokenIsAdded(sendEmail: true)
         
 	    // Override point for customization after application launch.
-        return true
+            return true
     }
 
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
 	    // Sends this device token to your ERPN server
-        erpn.sendDeviceToken(deviceToken)
+            erpn.sendDeviceToken(deviceToken)
     }
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError){
             // Returns an error notifications if the conection to your ERPN server failed, or this device token was
